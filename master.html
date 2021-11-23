@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Agribank E-Moblie Banking </title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="navbar"> 
+      <div class="navbar__logo d-flex"><a href="#"><img src="./images/layouts/logo_agribank.png"></a></div>
+      <div class="navbar__list">
+        <ul> 
+          <li class="list-item"><a class="list-item__bell" href=""><i class="far fa-envelope"></i><span class="card-cout">9</span></a></li>
+          <li class="list-item"><a class="list-item__bell" href=""> <i class="far fa-bell"> </i><span class="card-cout">99</span></a>
+            <div class="list-item__box"> 
+              <ul class="box__list"> 
+                <li class="box__list-top"> <span>You have 11 notifications</span><a class="item__box-load" href=""><i class="fas fa-redo"></i></a></li>
+                <li> <a class="item__box-time" href=""><span class="time__icon"> <i class="fas fa-user-tie"></i></span><span class="time__comment">New user registration</span><span class="time__time">1min      </span></a></li>
+                <li> <a class="item__box-time" href=""><span class="time__icon"> <i class="fas fa-comment-alt"></i></span><span class="time__comment">New coment</span><span class="time__time">16min      </span></a></li>
+                <li> <a class="item__box-time" href=""><span class="time__icon"> <i class="fas fa-user-tie"> </i></span><span class="time__comment">New user</span><span class="time__time">yesterday </span></a></li>
+                <li class="box__list-bottom"> <a href="">View all notifications            </a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="nav-link search_trigger" href="#"><i class="fas fa-search"></i></a>
+            <div class="search_wrap"><span class="close-search">
+                <ion-icon name="close-outline"></ion-icon></span>
+              <form>
+                <input class="form-control" id="search_input" type="text" placeholder="Search">
+                <button class="search_icon" type="submit">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </form>
+            </div>
+            <div class="search_overlay"></div>
+            <div class="search_overlay"></div>
+            <div class="search_overlay">  </div>
+          </li>
+          <li class="list-item"><a class="list-user" href=""><i class="far fa-user">Admin</i></a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="page"> 
+      <div class="page__left"> 
+        <div class="page__left-list"> 
+          <ul class="list__items">
+            <li class="dropdown">
+              <div class="dropdown__toggle"><a class="items__link" href=""><i class="fas fa-th-large"></i><span>Dashboard </span></a></div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown__toggle"> <a href="#">Quản Lí</a><i class="fas fa-angle-down"></i></div>
+              <div class="dropdown__menu" id="home">
+                <ul>
+                  <li><a class="dropdown__menu-item color-red" href="#">Kiểu chữ</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Biểu tượng</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Nút</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Bảng điều khiển</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Tab</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Cảnh báo và thông báo    </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown__toggle"> <a href="#">Khách Hàng</a><i class="fas fa-angle-down"></i></div>
+              <div class="dropdown__menu" id="home">
+                <ul>
+                  <li><a class="dropdown__menu-item color-red" href="#">Trong nước</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Quốc tế</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Khách hàng Vip</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown__toggle"> <a href="#">Người Dùng</a><i class="fas fa-angle-down"></i></div>
+              <div class="dropdown__menu" id="home">
+                <ul>
+                  <li><a class="dropdown__menu-item color-red" href="#">Hồ sơ</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Danh sách người dùng                        </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown__toggle"> <a href="#">Bảng Thống Kê</a><i class="fas fa-angle-down"></i></div>
+              <div class="dropdown__menu" id="home">
+                <ul>
+                  <li><a class="dropdown__menu-item color-red" href="#">Bảng tính</a></li>
+                  <li><a class="dropdown__menu-item" href="#">Bảng dữ liệu                       </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown__toggle"><a class="items__link" href=""><i class="fas fa-user-lock"></i><span>Login Page                          </span></a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page__right"> 
+        <div class="page__right-bcrumb"> 
+          <ul class="right-bcrumb__list">
+            <li class="bcrumb__list-item"> <a href=""> <i class="fa fa-home">Home </i></a>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </li>
+            <li class="bcrumb__list-item"> <a href="">Table</a>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </li>
+            <li class="bcrumb__list-item"> <a href="">User      </a></li>
+          </ul>
+        </div>
+        <div class="page__right-box"> 
+          <div class="container"> 
+            <div class="box__top"> 
+              <h2> <i class="fas fa-user-alt"> </i><span class="break">Members </span></h2>
+              <div class="box__top-icon"> <a href=""><i class="fas fa-wrench">        </i></a><a href=""><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="box__content">  
+              <div class="row"> 
+                <div class="col-12 box__content-header">
+                  <div class="content-header__left">
+                    <div class="custom__select"> 
+                      <select class="form-control form-control-sm" name="">
+                        <option value="">10</option>
+                        <option value="">25</option>
+                        <option value="">50     </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="content-header__right"> 
+                    <label for="">Search: </label>
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+              <table class="box__table"> 
+                <thead> 
+                  <tr> 
+                    <th>Username</th>
+                    <th>Date registered</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>Nguyen Van A        </td>
+                    <td class="table__date">2020/12/12</td>
+                    <td class="table__role">Staff </td>
+                    <td class="table__status">Banner</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van A        </td>
+                    <td class="table__date">2021/1/12</td>
+                    <td class="table__role">Staff </td>
+                    <td class="table__status">Banner</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van A        </td>
+                    <td class="table__date">2020/1/1</td>
+                    <td class="table__role">Admin </td>
+                    <td class="table__status">Inactive</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van AC        </td>
+                    <td class="table__date">2021/5/12</td>
+                    <td class="table__role">Staff </td>
+                    <td class="table__status">Banner</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van B       </td>
+                    <td class="table__date">2021/6/12</td>
+                    <td class="table__role">Staff </td>
+                    <td class="table__status">Banner</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van A        </td>
+                    <td class="table__date">2021/12/12</td>
+                    <td class="table__role">Member</td>
+                    <td class="table__status">Pending</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td>Nguyen Van C       </td>
+                    <td class="table__date">2021/4/4</td>
+                    <td class="table__role">Member </td>
+                    <td class="table__status">Banner</td>
+                    <td class="table__act"><a class="btn btn-success" href=""><i class="fas fa-search-plus"></i></a><a class="btn btn-info" href=""><i class="fas fa-info-circle"></i></a><a class="btn btn-danger" href=""><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/main.js"></script>
+  </body>
+  <!-- Jquery-->
+  <!-- Bootstrap JS-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">   
+    <!-- Ionicons JS-->
+  </script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <!-- Wow Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
